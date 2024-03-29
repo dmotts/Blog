@@ -1,5 +1,6 @@
 language = "python3"
-run = "python manage.py runserver 0.0.0.0:3000"
+run = "python3 manage.py runserver 0.0.0.0:3000"
+modules = ["python-3.10:v25-20230920-d4ad2e4"]
 
 [nix]
 channel = "stable-23_05"
@@ -8,4 +9,8 @@ channel = "stable-23_05"
 language = "python3"
 
 [gitHubImport]
-requiredFiles = [".replit", "replit.nix"] the code 
+requiredFiles = [".replit", "replit.nix"]
+
+[[ports]]
+localPort = 3000
+externalPort = 80
