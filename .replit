@@ -1,0 +1,11 @@
+language = "python3"
+run = "python manage.py runserver 0.0.0.0:3000"
+
+[nix]
+channel = "stable-23_05"
+
+[unitTest]
+language = "python3"
+
+[gitHubImport]
+requiredFiles = [".replit", "replit.nix"] the code 
